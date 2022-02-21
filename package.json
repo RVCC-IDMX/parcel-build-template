@@ -1,17 +1,17 @@
 {
-  "name": "starter",
+  "name": "platform-ticket",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Platfor Ticket",
+  "source": "src/index.html",
   "scripts": {
-    "dev": "parcel dev src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "rm -f dist/* && parcel build src/index.html"
   },
   "keywords": [],
-  "author": "Cynthia Teeters <cynthia.teeters@raritanval.edu> (https://github.com/cynthiateeters)",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.32.4"
+    "@parcel/transformer-sass": "^2.3.2",
+    "parcel": "^2.3.2",
+    "sass": "^1.49.8"
   }
 }
